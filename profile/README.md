@@ -27,6 +27,9 @@ Social Production is an open source platform for organizing collective productio
 | `app` | Flutter client track |
 | `web` | Older prototype and reference material |
 | `assets` | Logos, icons, and reusable visual assets |
+| `proto` | Protobuf and gRPC contract workspace |
+| `migrations` | Migration-related workspace for future data evolution |
+| `accounting` | Separate workspace area for accounting and stewardship support |
 
 ## Ways To Help
 
