@@ -9,6 +9,7 @@ Social Production is an open source platform for organizing collective productio
 - Start with the contributor guide: [planning/CONTRIBUTOR_GUIDE.md](https://github.com/social-production/planning/blob/main/CONTRIBUTOR_GUIDE.md)
 - See current priorities: [planning/CURRENTLY_WORKING_ON.md](https://github.com/social-production/planning/blob/main/CURRENTLY_WORKING_ON.md)
 - Read the project overview: [planning/README.md](https://github.com/social-production/planning/blob/main/README.md)
+- Read the public pitch: [planning/OUTREACH/PITCH_PAGE.md](https://github.com/social-production/planning/blob/main/OUTREACH/PITCH_PAGE.md)
 
 ## What We Are Building
 
