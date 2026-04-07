@@ -60,13 +60,13 @@ Those tools do not give communities a shared structure for production planning, 
 | `app` | Lead Flutter application track |
 | `web` | Older prototype and reference material, not the lead product track |
 | `assets` | Logos, icons, and reusable visual assets |
-| `proto` | Protobuf and gRPC contract workspace with the first builder-slice contract already in place |
-| `migrations` | Migration and projection-schema workspace with the first builder-slice schema already in place |
+| `proto` | Protobuf and gRPC contract workspace|
+| `migrations` | Migration and projection-schema workspace |
 | `accounting` | Separate support workspace, not the first-stop contributor track |
 
 ## Project Status
 
-The project is still early, but it now has one real narrow local-first path proven end to end. This is not yet a production-ready network for real communities.
+The project is still early, this is not yet a production-ready network for real communities.
 
 Current needs:
 
