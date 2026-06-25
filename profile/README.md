@@ -15,6 +15,11 @@ Current phase.
 - Testing for usability, security, and governance behavior.
 - Open to public use as the prototype becomes stable.
 
+At the moment, the main repos are:
+
+- [`social-production/web`](https://github.com/social-production/web) for the frontend
+- [`social-production/web-backend`](https://github.com/social-production/web-backend) for the backend
+
 ### Phase 2: Legal entity and funding
 
 - Non-profit foundation formed.
@@ -53,7 +58,10 @@ npm run dev
 
 Open `http://localhost:5173` for the app. Backend API docs are available at `http://localhost:8000/docs`.
 
-See `web/README.md` and `web-backend/README.md` for fuller beginner setup instructions.
+For fuller beginner setup instructions, see:
+
+- [`social-production/web`](https://github.com/social-production/web/blob/main/README.md)
+- [`social-production/web-backend`](https://github.com/social-production/web-backend/blob/main/README.md)
 
 ## Community
 
