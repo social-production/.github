@@ -1,86 +1,63 @@
 # Social Production
 
-Build production for use, not profit.
+Social Production is a coordination platform for collective activity. It is a social network built to help people organize work, events, services, software, mutual aid, and eventually larger real-world production outside the logic of markets, wages, and private profit.
 
-Social Production is an open source platform for communities that want to organize collective production, governance, funding, and distribution outside market relations.
+The Phase 1 web prototype is focused on facilitation: helping people find each other, create projects and events, coordinate requests and activity, and test the social mechanics before legal, funding, asset-holding, and peer-to-peer infrastructure come online.
 
-It is meant to help people build real projects together, pool resources transparently, govern decisions collectively, and distribute what gets produced by need instead of exchange.
+## Roadmap
 
-## New Here
+### Phase 1: Web prototype
 
-If you landed here from a QR code, sticker, or shared image, start with the pitch page and then the contributor guide.
+Current phase.
 
-- Start with the public pitch: [planning/OUTREACH/PITCH_PAGE.md](https://github.com/social-production/planning/blob/main/OUTREACH/PITCH_PAGE.md)
-- Read the contributor guide: [planning/CONTRIBUTOR_GUIDE.md](https://github.com/social-production/planning/blob/main/CONTRIBUTOR_GUIDE.md)
-- See current priorities: [planning/CURRENTLY_WORKING_ON.md](https://github.com/social-production/planning/blob/main/CURRENTLY_WORKING_ON.md)
+- Conventional FastAPI backend and SvelteKit PWA frontend.
+- Facilitation only, with no asset holding.
+- Testing for usability, security, and governance behavior.
+- Open to public use as the prototype becomes stable.
 
-## What This Solves
+### Phase 2: Legal entity and funding
 
-Most platforms help people communicate. They do not help communities collectively produce what they need.
+- Non-profit foundation formed.
+- Community funding and stewardship activated inside Social Production.
+- Asset holding and physical asset coordination come online.
 
-Social Production is aimed at communities that want to:
+### Phase 3: Peer-to-peer backend
 
-- organize real production such as food, housing, care, tools, repair, free software, etc. The sky is the limit.
-- pool resources without turning them into private ownership claims
-- make decisions transparently instead of through informal power
-- track planning, funding, and distribution in one system
-- reduce dependence on wages and markets over time
+- Research and development toward Holochain, p2panda, or similar infrastructure.
+- Gradual migration away from the conventional backend.
 
-## How It Works
+### Phase 4: Full model
 
-- People create projects around concrete needs and productive work.
-- Members coordinate labor, resources, and distribution together.
-- Governance, funding, and other key records are intended to be transparent and on-chain.
-- The legal and stewardship model is being developed in public, with the current direction centered on non-profit asset stewardship rather than private ownership.
-- The current architecture direction uses local-first applications where every app instance runs as a node, with the app UI talking to its own local node runtime while nodes sync with each other over the peer-to-peer network.
+- Shutdown-resistant infrastructure.
+- Non-market coordination at scale.
 
-## What Gets Built
+## Run The Web Server Locally
 
-Examples include:
+Prerequisites:
 
-- food production and distribution
-- housing and maintenance projects
-- care networks and mutual aid
-- tool libraries and repair
-- education, documentation, and free software
-- shared infrastructure and other community needs
+- [Docker](https://docs.docker.com/get-docker/) and Docker Compose for the backend.
+- [Node.js 18+](https://nodejs.org/) and npm for the frontend.
 
-## Why This Platform
+Start the backend:
 
-People can already use Discord, Telegram, Facebook groups, or other tools to discuss ideas.
+```bash
+cd web-backend
+docker compose up -d --build
+```
 
-Those tools do not give communities a shared structure for production planning, pooled resources, transparent governance, and need-based distribution. Social Production is being built specifically for that.
+Start the frontend:
 
-## Repositories
+```bash
+cd web
+npm install
+npm run dev
+```
 
-| Repo | Purpose |
-|---|---|
-| `planning` | Canonical product, architecture, legal, and outreach source-of-truth docs |
-| `network` | Rust node, blockchain, sync, and terminal UI track |
-| `app` | Lead Flutter application track |
-| `web` | Older prototype and reference material, not the lead product track |
-| `assets` | Logos, icons, and reusable visual assets |
-| `proto` | Protobuf and gRPC contract workspace|
-| `migrations` | Migration and projection-schema workspace |
-| `accounting` | Separate support workspace, not the first-stop contributor track |
+Open `http://localhost:5173` for the app. Backend API docs are available at `http://localhost:8000/docs`.
 
-## Project Status
+See `web/README.md` and `web-backend/README.md` for fuller beginner setup instructions.
 
-The project is still early, this is not yet a production-ready network for real communities.
+## Community
 
-Current needs:
-
-- Rust and distributed systems
-- Flutter and application development
-- planning and documentation
-- design and outreach
-- legal and governance research
-- real-world production and organizing experience
-
-## Quick Start By Role
-
-- Developers: start with the [contributor guide](https://github.com/social-production/planning/blob/main/CONTRIBUTOR_GUIDE.md), then follow the [network](https://github.com/social-production/network) or [app](https://github.com/social-production/app) track that fits your skills.
-- Designers and outreach contributors: use the [pitch page](https://github.com/social-production/planning/blob/main/OUTREACH/PITCH_PAGE.md), browse the [outreach folder](https://github.com/social-production/planning/tree/main/OUTREACH), and use the [assets repo](https://github.com/social-production/assets). There are already shareable materials there, or you can make your own.
-- Organizers and governance researchers: use the [pitch page](https://github.com/social-production/planning/blob/main/OUTREACH/PITCH_PAGE.md) and the [drafts folder](https://github.com/social-production/planning/tree/main/DRAFTS).
-
-If you want to contribute, start with the contributor guide and then pick one focused item from the current working list.
+- Discord: https://discord.gg/VvbJ3hhEPb
+- Reddit: https://www.reddit.com/r/SocialProduction/
