@@ -4,6 +4,11 @@ Social Production is a coordination platform for collective activity. It is a so
 
 The Phase 1 web prototype is focused on facilitation: helping people find each other, create projects and events, coordinate requests and activity, and test the social mechanics before legal, funding, asset-holding, and peer-to-peer infrastructure come online.
 
+At the moment, the main repos are:
+
+- [`social-production/web`](https://github.com/social-production/web) for the frontend
+- [`social-production/web-backend`](https://github.com/social-production/web-backend) for the backend
+
 ## Roadmap
 
 ### Phase 1: Web prototype
@@ -15,10 +20,7 @@ Current phase.
 - Testing for usability, security, and governance behavior.
 - Open to public use as the prototype becomes stable.
 
-At the moment, the main repos are:
 
-- [`social-production/web`](https://github.com/social-production/web) for the frontend
-- [`social-production/web-backend`](https://github.com/social-production/web-backend) for the backend
 
 ### Phase 2: Legal entity and funding
 
@@ -60,8 +62,8 @@ Open `http://localhost:5173` for the app. Backend API docs are available at `htt
 
 For fuller beginner setup instructions, see:
 
-- [`social-production/web`](https://github.com/social-production/web/blob/main/README.md)
-- [`social-production/web-backend`](https://github.com/social-production/web-backend/blob/main/README.md)
+- [`web/README`](https://github.com/social-production/web/blob/main/README.md)
+- [`web-backend/README`](https://github.com/social-production/web-backend/blob/main/README.md)
 
 ## Community
 
