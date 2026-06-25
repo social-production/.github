@@ -41,14 +41,12 @@ Prerequisites:
 Start the backend:
 
 ```bash
-cd web-backend
 docker compose up -d --build
 ```
 
 Start the frontend:
 
 ```bash
-cd web
 npm install
 npm run dev
 ```
