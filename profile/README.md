@@ -1,71 +1,71 @@
-# Social Production
+<p align="center">
+  <img src="images/logo.png" alt="Social Production logo" width="120" height="120">
+</p>
 
-Social Production is a coordination platform for collective activity. It is a social network built to help people organize work, events, services, software, mutual aid, and eventually larger real-world production outside the logic of markets, wages, and private profit.
+<h1 align="center">Social Production</h1>
 
-The Phase 1 web prototype is focused on facilitation: helping people find each other, create projects and events, coordinate requests and activity, and test the social mechanics before legal, funding, asset-holding, and peer-to-peer infrastructure come online.
+<p align="center">
+  A social network for organizing real work together: projects, events, services and mutual aid, decided by the people doing them.
+</p>
 
-At the moment, the main repos are:
+<p align="center">
+  <a href="https://web-production-885ec.up.railway.app">Try the prototype</a> ·
+  <a href="https://discord.gg/VvbJ3hhEPb">Discord</a> ·
+  <a href="https://www.reddit.com/r/SocialProduction/">Reddit</a>
+</p>
 
-- [`social-production/web`](https://github.com/social-production/web) for the frontend
-- [`social-production/web-backend`](https://github.com/social-production/web-backend) for the backend
+---
 
-## Roadmap
+Social Production helps people find each other and coordinate collective activity outside the logic of markets, wages and private profit. It is in Phase 1: a working web prototype focused on facilitation, used to test the social mechanics before legal, funding and peer-to-peer infrastructure arrive.
 
-### Phase 1: Web prototype
+## What you can do today
 
-Current phase.
+- **Projects.** Start production, organisation and software projects, plus collective and personal services. Each moves through phases (proposal, plan, activity, close), and members vote to advance.
+- **Events.** Public events, or private ones for invitees or a private community. Run them collaboratively, or let organizers decide directly.
+- **Plans and activities.** Propose plans, rate them against shared criteria and the values members added, then schedule activities with roles people can take.
+- **Channels and communities.** Join topic channels and public or private communities, each with its own picture, settings and member votes.
+- **Help requests and posts.** Ask for help or share news with the people who follow you.
+- **Chat and calls.** Direct and group chats, a chat for every project and event, replies, pinned messages, and voice calls.
+- **Map and calendar.** Find activity near you, and see times in your own time zone.
+- **Fair voting.** New accounts warm up before they can vote, full members vouch for others, and suspected bots go to a public review, so votes stay with real people.
 
-- Conventional FastAPI backend and SvelteKit PWA frontend.
-- Facilitation only, with no asset holding.
-- Testing for usability, security, and governance behavior.
-- Open to public use as the prototype becomes stable.
+It runs as an installable web app (PWA) on phones and desktops.
 
+## Repositories
 
+| Repo | What it is |
+|---|---|
+| [`web`](https://github.com/social-production/web) | SvelteKit frontend and PWA |
+| [`web-backend`](https://github.com/social-production/web-backend) | FastAPI API with Postgres and Redis |
+| [`assets`](https://github.com/social-production/assets) | Logos, app icons and shared images |
 
-### Phase 2: Legal entity and funding
+## Run it locally
 
-- Non-profit foundation formed.
-- Community funding and stewardship activated inside Social Production.
-- Asset holding and physical asset coordination come online.
-
-### Phase 3: Peer-to-peer backend
-
-- Research and development toward Holochain, p2panda, or similar infrastructure.
-- Gradual migration away from the conventional backend.
-
-### Phase 4: Full model
-
-- Shutdown-resistant infrastructure.
-- Non-market coordination at scale.
-
-## Run The Web Server Locally
-
-Prerequisites:
-
-- [Docker](https://docs.docker.com/get-docker/) and Docker Compose for the backend.
-- [Node.js 18+](https://nodejs.org/) and npm for the frontend.
-
-Start the backend:
+You need [Docker](https://docs.docker.com/get-docker/) and [Node.js 18+](https://nodejs.org/).
 
 ```bash
+# Backend (API on http://localhost:8000, docs at /docs)
+git clone https://github.com/social-production/web-backend
+cd web-backend
 docker compose up -d --build
-```
 
-Start the frontend:
-
-```bash
+# Frontend (app on http://localhost:5173)
+git clone https://github.com/social-production/web
+cd web
+cp .env.example .env.local   # VITE_BACKEND=fastapi, VITE_API_URL=http://localhost:8000
 npm install
 npm run dev
 ```
 
-Open `http://localhost:5173` for the app. Backend API docs are available at `http://localhost:8000/docs`.
+The [`web`](https://github.com/social-production/web/blob/main/README.md) and [`web-backend`](https://github.com/social-production/web-backend/blob/main/README.md) READMEs cover setup in more detail.
 
-For fuller beginner setup instructions, see:
+## Roadmap
 
-- [`web/README`](https://github.com/social-production/web/blob/main/README.md)
-- [`web-backend/README`](https://github.com/social-production/web-backend/blob/main/README.md)
+1. **Web prototype** *(now)*. Conventional backend and PWA, facilitation only with no asset holding, tested for usability, security and governance, and opening to public use as it stabilises.
+2. **Legal entity and funding.** A non-profit foundation, community funding and stewardship inside Social Production, and coordination of physical assets.
+3. **Peer-to-peer backend.** Research toward Holochain, p2panda or similar, then a gradual move off the conventional backend.
+4. **Full model.** Shutdown-resistant infrastructure and non-market coordination at scale.
 
-## Community
+## Get involved
 
-- Discord: https://discord.gg/VvbJ3hhEPb
-- Reddit: https://www.reddit.com/r/SocialProduction/
+Come say hello on [Discord](https://discord.gg/VvbJ3hhEPb) or [Reddit](https://www.reddit.com/r/SocialProduction/), try the [prototype](https://web-production-885ec.up.railway.app), or open an issue in either repo.
